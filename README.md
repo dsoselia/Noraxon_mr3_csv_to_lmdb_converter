@@ -1,20 +1,12 @@
-# Fall Detection Project
-To Do
-By 30.06
-- [X] Open all binary files in Noraxon software and manually mark StartOfFall and EndOfFall moments
-- [X] Export marked data to csv files
-- [X] Write Script to merge data together
-- [X] Create metadata, and normalize individual columns
+# Noraxon_mr3_csv_to_lmdb_converter
+This project helps convert from .csv exported from noraxon or nump0y arrays to lmdb
 
-By 07.07
-- [ ] split into test and training sets sensor inputs
-- [X] trnsform data to numpy
-- [X] write RNN classifier
-- [X] add derivative generator
+use:
+for converting from csv:
+place .csv(s) in csv_files directory
+run transform.py
 
+to convert from exisitng numpy arrays
 
-- [ ] Process for video analysis (equivelent)
-- [ ] choose export formats
-- [ ] document process
-
-
+use function merger.save_to_lmdb(x, y, name)
+which takes X and y numpy arrays and name of the lmdb database ar arguments
