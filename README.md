@@ -2,6 +2,8 @@
 This project helps convert from .csv exported from noraxon or nump0y arrays to lmdb
 
 use:
+
+
 for converting from csv:
 place .csv(s) in csv_files directory
 run transform.py
